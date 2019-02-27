@@ -8,7 +8,9 @@ import { OlympicComponent } from './pages/charts/olympic/olympic.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'chart', component: OlympicComponent },
+  { path: 'chart', children: [
+    { path: 'olympic',component: OlympicComponent }
+  ]},
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
 ];
