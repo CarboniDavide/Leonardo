@@ -1,7 +1,7 @@
 $.getJSON(
     'https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/marathon.json',
     function (data) {
-        Highcharts.chart('graph', {
+        Highcharts.chart('marathon', {
             chart: {
                 type: 'spline',
                 parallelCoordinates: true,
