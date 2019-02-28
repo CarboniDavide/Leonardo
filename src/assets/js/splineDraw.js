@@ -12,6 +12,12 @@ $.getJSON(
             title: {
                 text: 'Marathon set'
             },
+            subtitle: {
+                floating: true,
+                align: 'center',
+                y: 30,
+                text: '<a href="https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/marathon.json">cdn.jsdelivr.net</a>'
+            },
             plotOptions: {
                 series: {
                     animation: false,
@@ -93,6 +99,3 @@ $.getJSON(
         });
     }
 );
-
-$(".highcharts-series-hover path").css({"stroke":"rgb(255, 66, 66)", "stroke-width": "2px"});
-$("#container").css({"max-width":"800px", "height": "400px", "margin": "1em auto"});
