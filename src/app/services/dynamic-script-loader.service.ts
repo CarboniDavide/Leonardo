@@ -14,7 +14,9 @@ export const ScriptStore: Scripts[] = [
   { name: 'series-label', src: './../../../assets/js/series-label.js' },
   { name: 'streamgraph', src: './../../../assets/js/streamgraph.js' },
   { name: 'streamgraphDraw', src: './../../../assets/js/streamgraphDraw.js' },
-  { name: 'annotations', src: './../../../assets/js/annotations.js' }
+  { name: 'annotations', src: './../../../assets/js/annotations.js' },
+  { name: 'sunburst', src: './../../../assets/js/sunburst.js' },
+  { name: 'sunburstDraw', src: './../../../assets/js/sunburstDraw.js' }
 ];
 
 declare var document: any;
