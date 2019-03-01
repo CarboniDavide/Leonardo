@@ -16,7 +16,10 @@ export const ScriptStore: Scripts[] = [
   { name: 'streamgraphDraw', src: './../../../assets/js/streamgraphDraw.js' },
   { name: 'annotations', src: './../../../assets/js/annotations.js' },
   { name: 'sunburst', src: './../../../assets/js/sunburst.js' },
-  { name: 'sunburstDraw', src: './../../../assets/js/sunburstDraw.js' }
+  { name: 'sunburstDraw', src: './../../../assets/js/sunburstDraw.js' },
+  { name: 'treemapDraw', src: './../../../assets/js/treemapDraw.js' },
+  { name: 'treemap', src: './../../../assets/js/treemap.js' },
+  { name: 'heatmap', src: './../../../assets/js/heatmap.js' }
 ];
 
 declare var document: any;
