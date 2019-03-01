@@ -10,13 +10,13 @@ $.getJSON(
                 }
             },
             title: {
-                text: 'Marathon set'
+                text: ''
             },
             subtitle: {
                 floating: true,
                 align: 'center',
                 y: 30,
-                text: '<a href="https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/marathon.json">cdn.jsdelivr.net</a>'
+                text: ''
             },
             plotOptions: {
                 series: {

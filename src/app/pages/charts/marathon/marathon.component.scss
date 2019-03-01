@@ -4,7 +4,21 @@
 }
 
 #marathon {
-	min-width: 310px;
+	min-width: 100%;
   min-height: 600px;
-	margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: black;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
 }
