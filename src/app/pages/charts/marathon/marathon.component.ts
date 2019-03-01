@@ -14,11 +14,14 @@ export class MarathonComponent implements OnInit {
     this.loadScripts();
   }
 
+  chargingSize: number;
+
   private loadScripts() {
+    this.chargingSize = 0;
     // You can load multiple scripts by just providing the key as argument into load method of the service
-    this.dynamicScriptLoader.load('highcharts').then(data => {
-      this.dynamicScriptLoader.load('parallel-axes',).then(data => {
-        this.dynamicScriptLoader.load('spline').then(data => {
+    this.dynamicScriptLoader.load('highcharts').then(data => { this.chargingSize = 33;
+      this.dynamicScriptLoader.load('parallel-axes',).then(data => { this.chargingSize = 65;
+        this.dynamicScriptLoader.load('spline').then(data => { this.chargingSize = 100;
         }).catch(error => console.log(error))
       }).catch(error => console.log(error))
     }).catch(error => console.log(error))

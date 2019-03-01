@@ -31,17 +31,17 @@ Highcharts.chart('graph', {
         Highcharts.color(colors[2]).brighten(-0.2).get(),
         Highcharts.color(colors[2]).brighten(-0.3).get()
     ],
-
+    
     title: {
         floating: true,
         align: 'left',
-        text: 'Winter Olympic Medal Wins'
+        text: ''
     },
     subtitle: {
         floating: true,
         align: 'left',
         y: 30,
-        text: 'Source: <a href="https://www.sports-reference.com/olympics/winter/1924/">sports-reference.com</a>'
+        text: ''
     },
 
     xAxis: {
