@@ -948,7 +948,7 @@ function createGraph(data){
 
     for (region in data) {
         if (data.hasOwnProperty(region)) {
-            regionVal = 0;
+            regionVal = 0;	
             regionP = {
                 id: 'id_' + regionI,
                 name: region,
