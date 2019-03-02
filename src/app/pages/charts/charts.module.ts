@@ -10,6 +10,7 @@ import * as exporting from 'highcharts/modules/exporting.src';
 import * as sunburst from 'highcharts/modules/sunburst.src';
 import * as heatmap from 'highcharts/modules/heatmap.src';
 import * as treemap from 'highcharts/modules/treemap.src';
+import * as parallelCoordinates from 'highcharts/modules/parallel-coordinates.src';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import * as treemap from 'highcharts/modules/treemap.src';
   ],
   providers: [
     DynamicScriptLoaderService,
-    { provide: HIGHCHARTS_MODULES, useFactory: () => [ exporting, sunburst, treemap, heatmap ] }
+    { provide: HIGHCHARTS_MODULES, useFactory: () => [ exporting, sunburst, treemap, heatmap, parallelCoordinates ] }
   ]
 })
 export class ChartsModule { }
