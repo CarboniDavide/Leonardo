@@ -13,8 +13,16 @@ import * as treemap from 'highcharts/modules/treemap.src';
 @NgModule({
   declarations: [OlympicComponent, MarathonComponent, PopulationComponent, MortalityComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    ChartModule
   ],
-  providers: [DynamicScriptLoaderService]
+  providers: [
+    DynamicScriptLoaderService,
+    { provide: HIGHCHARTS_MODULES, useFactory: () => [ 
+      treemap, 
+      heatmap, 
+    ] }
+  ]
 })
 export class ChartsModule { }
+
