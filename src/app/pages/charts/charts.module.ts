@@ -12,7 +12,6 @@ import * as heatmap from 'highcharts/modules/heatmap.src';
 import * as treemap from 'highcharts/modules/treemap.src';
 import * as parallelCoordinates from 'highcharts/modules/parallel-coordinates.src';
 
-
 @NgModule({
   declarations: [OlympicComponent, MarathonComponent, PopulationComponent, MortalityComponent],
   imports: [
@@ -21,7 +20,13 @@ import * as parallelCoordinates from 'highcharts/modules/parallel-coordinates.sr
   ],
   providers: [
     DynamicScriptLoaderService,
-    { provide: HIGHCHARTS_MODULES, useFactory: () => [ exporting, sunburst, treemap, heatmap, parallelCoordinates ] }
+    { provide: HIGHCHARTS_MODULES, useFactory: () => [ 
+      exporting, 
+      sunburst, 
+      treemap, 
+      heatmap, 
+      parallelCoordinates
+    ] }
   ]
 })
 export class ChartsModule { }
