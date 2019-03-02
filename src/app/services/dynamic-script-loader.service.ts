@@ -6,20 +6,12 @@ interface Scripts {
 }
 
 export const ScriptStore: Scripts[] = [
-  { name: 'jquery', src: './../../../assets/js/jquery.js' },
   { name: 'highcharts', src: './../../../assets/js/highcharts.js' },
-  { name: 'parallel-axes', src: './../../../assets/js/parallel-coordinates.js' },
-  { name: 'spline', src: './../../../assets/js/splineDraw.js' },
   { name: 'exporting', src: './../../../assets/js/exporting.js' },
   { name: 'series-label', src: './../../../assets/js/series-label.js' },
   { name: 'streamgraph', src: './../../../assets/js/streamgraph.js' },
   { name: 'streamgraphDraw', src: './../../../assets/js/streamgraphDraw.js' },
-  { name: 'annotations', src: './../../../assets/js/annotations.js' },
-  { name: 'sunburst', src: './../../../assets/js/sunburst.js' },
-  { name: 'sunburstDraw', src: './../../../assets/js/sunburstDraw.js' },
-  { name: 'treemapDraw', src: './../../../assets/js/treemapDraw.js' },
-  { name: 'treemap', src: './../../../assets/js/treemap.js' },
-  { name: 'heatmap', src: './../../../assets/js/heatmap.js' }
+  { name: 'annotations', src: './../../../assets/js/annotations.js' }
 ];
 
 declare var document: any;

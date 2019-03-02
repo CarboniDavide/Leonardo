@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DynamicScriptLoaderService } from 'src/app/services/dynamic-script-loader.service';
 import { Chart } from 'angular-highcharts';
-import * as Highcharts from 'highcharts';
 
 @Component({
   selector: 'app-marathon',
