@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
   onClickMe() {
-    this.router.navigateByUrl('/chart/olympic');
+    this.router.navigateByUrl('/chart/all');
   }
 
 }

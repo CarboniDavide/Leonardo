@@ -7,6 +7,7 @@ import { OlympicComponent } from './pages/charts/olympic/olympic.component';
 import { MarathonComponent } from './pages/charts/marathon/marathon.component';
 import { PopulationComponent } from './pages/charts/population/population.component';
 import { MortalityComponent } from './pages/charts/mortality/mortality.component';
+import { AllComponent } from './pages/charts/all/all.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
     { path: 'olympic',component: OlympicComponent },
     { path: 'marathon',component: MarathonComponent },
     { path: 'population',component: PopulationComponent },
-    { path: 'mortality',component: MortalityComponent }
+    { path: 'mortality',component: MortalityComponent },
+    { path: 'all',component: AllComponent },
   ]},
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },

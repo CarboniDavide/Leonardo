@@ -8,10 +8,11 @@ import { MortalityComponent } from './mortality/mortality.component';
 import { ChartModule, HIGHCHARTS_MODULES } from 'angular-highcharts';
 import * as heatmap from 'highcharts/modules/heatmap.src';
 import * as treemap from 'highcharts/modules/treemap.src';
+import { AllComponent } from './all/all.component';
 
 
 @NgModule({
-  declarations: [OlympicComponent, MarathonComponent, PopulationComponent, MortalityComponent],
+  declarations: [OlympicComponent, MarathonComponent, PopulationComponent, MortalityComponent, AllComponent],
   imports: [
     CommonModule,
     ChartModule
