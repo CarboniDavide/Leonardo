@@ -1,9 +1,19 @@
+.background{
+    background-image: url('src/assets/img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
 #intro-video{
     height: 100%;
     width: 100%;
     padding: 0;
     margin-top: -116px; 
-    position: relative;   
+    position: relative;
 }
 
 #video-fade{
