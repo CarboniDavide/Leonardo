@@ -6,7 +6,6 @@ interface Scripts {
 }
 
 export const ScriptStore: Scripts[] = [
-  { name: 'jquery', src: './../../../assets/js/jquery.js' },
   { name: 'highcharts', src: './../../../assets/js/highcharts.js' },
   { name: 'parallel-axes', src: './../../../assets/js/parallel-coordinates.js' },
   { name: 'spline', src: './../../../assets/js/splineDraw.js' },
