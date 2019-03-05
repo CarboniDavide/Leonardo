@@ -7,6 +7,7 @@ import { MarathonComponent } from './pages/charts/marathon/marathon.component';
 import { PopulationComponent } from './pages/charts/population/population.component';
 import { MortalityComponent } from './pages/charts/mortality/mortality.component';
 import { AllComponent } from './pages/charts/all/all.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
     { path: 'all',component: AllComponent },
   ]},
   { path: 'contact', component: ContactComponent },
+  { path: 'about', component: AboutComponent },
 ];
 
 @NgModule({
