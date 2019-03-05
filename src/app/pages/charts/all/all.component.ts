@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-all',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  olympic() {
+    this.router.navigateByUrl('/chart/olympic');
+  }
+
+  marathon() {
+    this.router.navigateByUrl('/chart/marathon');
+  }
+
+  population() {
+    this.router.navigateByUrl('/chart/population');
+  }
+
+  mortality() {
+    this.router.navigateByUrl('/chart/mortality');
   }
 
 }

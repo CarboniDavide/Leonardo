@@ -1,0 +1,40 @@
+.no-margin-top{
+    margin-top: -40px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.no-margin{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 300px;
+    background-color: transparent;
+}
+
+.content{
+    padding: 50px;
+}
+
+.base-container{
+    height: 600px;
+    padding: 50px;
+}
+
+#olympic{
+    background-color: #8DD4A2;
+}
+
+#marathon{
+    background-color: #508CC8;
+}
+
+#population{
+    background-color: #F49952;
+}
+
+#mortality{
+    background-color: #9C9EDB;
+}
