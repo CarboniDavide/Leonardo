@@ -1,3 +1,4 @@
+// Angular base module
 import { Component, OnInit } from '@angular/core';
 
 @Component({

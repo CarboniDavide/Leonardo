@@ -1,3 +1,7 @@
+// Dynamic script loader
+// This script allow all components (web pages) to load necessary js file on demand
+// All available scripts are defined in the ScriptStore, and only this file are visible in all application
+
 import { Injectable } from '@angular/core';
 
 interface Scripts {
@@ -5,6 +9,8 @@ interface Scripts {
   src: string;
 }
 
+// javascript list file
+// these files are loaded on demand by each module
 export const ScriptStore: Scripts[] = [
   { name: 'highcharts', src: './../../../assets/js/highcharts.js' },
   { name: 'parallel-axes', src: './../../../assets/js/parallel-coordinates.js' },

@@ -1,4 +1,6 @@
+// Angular base module
 import { Component, OnInit } from '@angular/core';
+// Dynamic script loader
 import { DynamicScriptLoaderService } from 'src/app/services/dynamic-script-loader.service';
 
 @Component({
@@ -14,8 +16,9 @@ export class OlympicComponent implements OnInit {
     this.loadScripts();
   }
 
+  // load necessary scripts using dynamic loader service
+  // all necessary scripts must be loaded in a specific order using promise
   private loadScripts() {
-    // You can load multiple scripts by just providing the key as argument into load method of the service
     this.dynamicScriptLoader.load('highcharts').then(data => {
       this.dynamicScriptLoader.load('streamgraph',).then(data => {
         this.dynamicScriptLoader.load('series-label').then(data => {
