@@ -1,6 +1,8 @@
+// Base angular modules
 import { Component, OnInit } from '@angular/core';
-import { DynamicScriptLoaderService } from 'src/app/services/dynamic-script-loader.service';
+// angular-highcharts module
 import { Chart } from 'angular-highcharts';
+// highcharts modules
 import * as Highcharts from 'highcharts';
 
 @Component({
@@ -10,6 +12,7 @@ import * as Highcharts from 'highcharts';
 })
 export class MortalityComponent implements OnInit {
 
+  // data
   data = {
     "Eastern Mediterranean": {
       "Afghanistan": {
@@ -940,11 +943,12 @@ export class MortalityComponent implements OnInit {
     }
   }
 
-  constructor(private dynamicScriptLoader: DynamicScriptLoaderService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
+  // prepare data for chart
   parseData(){
     var points = [],
         regionP,
@@ -1005,6 +1009,7 @@ export class MortalityComponent implements OnInit {
     return points;
   };  
   
+  // create graph
   chart = new Chart({
     series: [{
       type: 'treemap',
