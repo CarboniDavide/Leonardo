@@ -12,7 +12,7 @@ Angular requires Node.js version 8.x or 10.x.
 
 ## Install
 
-Download the github project in a local folder and run:
+Download the github project in a local folder and run (inside the projet folder):
 
     npm i
 
