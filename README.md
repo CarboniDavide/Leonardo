@@ -11,6 +11,9 @@ Angular requires Node.js version 8.x or 10.x.
 - To get Node.js, go to nodejs.org.
 
 ### Install
+Install Angular cli before using:
+
+    npm install -g @angular/cli
 
 Download the github project in a local folder and run (inside the projet folder):
 
