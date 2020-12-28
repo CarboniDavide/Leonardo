@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "heroku-postbuild": "ng build --prod",
-    "gh-pages": "ng build --base-href 'https://CarboniDavide.github.io/Leonardo/' --prod && npx ngh --dir=www/"
+    "gh-pages": "ng build --base-href 'https://CarboniDavide.github.io/Leonardo/' --prod && npx ngh --dir=dist/Leonardo"
   },
   "private": true,
   "dependencies": {
